@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>Clicky Dino</title>
+  </head>
+  <body class="bg-yellow-200 flex items-center justify-center min-h-screen">
+    <div class="flex space-x-8">
+      <!-- Left Section -->
+      <div class="bg-yellow-300 p-8 rounded-md shadow-md">
+        <h1 class="text-4xl font-bold text-center mb-8 font-sans">
+          Clicky Bird
+        </h1>
+        <input
+          type="text"
+          placeholder="Enter Name"
+          class="block w-full mb-4 p-2 border rounded-md"
+        />
+        <input
+          type="text"
+          placeholder="Enter Room Id..."
+          class="block w-full mb-6 p-2 border rounded-md"
+        />
+        <div class="flex space-x-4">
+          <button class="bg-green-500 text-white py-2 px-6 rounded-md">
+            Create
+          </button>
+          <button class="bg-red-500 text-white py-2 px-6 rounded-md">
+            Cancel
+          </button>
+        </div>
+      </div>
+
+      <!-- Right Section -->
+      <div class="bg-yellow-300 p-8 rounded-md shadow-md">
+        <h1 class="text-4xl font-bold text-center mb-8 font-sans">
+          Clicky Bird
+        </h1>
+        <div class="flex flex-col space-y-4">
+          <button class="bg-green-500 text-white py-2 px-6 rounded-md">
+            Create Room
+          </button>
+          <button class="bg-green-500 text-white py-2 px-6 rounded-md">
+            Join Room
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

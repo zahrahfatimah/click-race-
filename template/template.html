@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>Clicky Dino</title>
+  </head>
+  <body class="bg-yellow-300 flex items-center justify-center min-h-screen">
+    <div class="text-center">
+      <h1 class="text-4xl font-bold mb-4">CLICKY Dino</h1>
+      <p class="mb-4">
+        🛈 Click on your enemy's button to reduce his/her score by 1 point!
+      </p>
+
+      <!-- Scores and Player Names -->
+      <div class="grid grid-cols-2 gap-10 mb-4">
+        <!-- Player 1 -->
+        <div>
+          <p class="text-6xl font-bold">0</p>
+          <p class="text-2xl text-green-700 font-bold">Superman</p>
+        </div>
+        <!-- Player 2 -->
+        <div>
+          <p class="text-6xl font-bold">0</p>
+          <p class="text-2xl text-green-700 font-bold">Batman</p>
+        </div>
+      </div>
+
+      <!-- Timer -->
+      <div class="text-4xl mb-4">3</div>
+
+      <!-- Characters and Buttons -->
+      <div class="flex items-center justify-center space-x-8 mb-4">
+        <!-- Character 1 -->
+        <div class="flex flex-col items-center">
+          <img
+            src="./assets/DinoSprites_tard.gif"
+            alt="Superman Dino"
+            class="w-24 h-24 mb-4"
+          />
+          <button class="bg-red-500 rounded-full w-20 h-20"></button>
+        </div>
+        <!-- Character 2 -->
+        <div class="flex flex-col items-center">
+          <img
+            src="./assets/DinoSprites_vita.gif"
+            alt="Batman Dino"
+            class="w-24 h-24 mb-4"
+          />
+          <button class="bg-red-500 rounded-full w-20 h-20"></button>
+        </div>
+      </div>
+
+      <!-- Room ID and Player Selection -->
+      <div class="mb-4">
+        <label for="room-id" class="block mb-2">Room ID:</label>
+        <input
+          id="room-id"
+          type="text"
+          placeholder="Enter Room ID"
+          class="border-2 border-black p-2"
+        />
+      </div>
+
+      <!-- Player Status -->
+      <div class="flex justify-center space-x-4">
+        <!-- Player 1 -->
+        <div class="flex items-center space-x-2">
+          <input type="radio" id="superman" name="player" class="w-4 h-4" />
+          <label for="superman" class="text-lg">Superman(Player 1)</label>
+        </div>
+        <!-- Player 2 -->
+        <div class="flex items-center space-x-2">
+          <input type="radio" id="batman" name="player" class="w-4 h-4" />
+          <label for="batman" class="text-lg">Batman(Player 2)</label>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
